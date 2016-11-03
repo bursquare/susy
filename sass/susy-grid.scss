@@ -1,0 +1,98 @@
+@import "susy";
+
+
+
+body {
+    color:#474747;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    margin-bottom: 32px;
+}
+.col {
+    text-align: center;
+    background-color: #ededed;
+    line-height: 3;
+}
+
+// Defaulft setup kinda sucks..
+.container-1 {
+    @include container(80em);
+    border: 1px solid #F00;
+
+    .col {
+        @include span(25%);
+    }
+}
+
+.container-2 {
+    @include container(80em);
+
+    .col {
+        @include span(3 of 12);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.layout-33-66 {
+    $wow-layout: (
+      flow: ltr,
+      math: fluid,
+      output: isolate,
+      gutter-position: after,
+      container: 80rem,
+      container-position: center,
+      columns: 12,
+      gutters: .25,
+      column-width: false,
+      global-box-sizing: content-box,
+      last-flow: to
+    );
+
+
+    @include container($wow-layout);
+
+    .left {
+        @include span(3 of 12)
+        background-color: #ccc;
+    }
+    .right {
+        @include span(9 of 12);
+        margin-right: 0;
+    }
+}
+.layout-66-33 {
+    $wow-layout: (
+      flow: ltr,
+      math: fluid,
+      output: isolate,
+      gutter-position: after,
+      container: 80rem,
+      container-position: center,
+      columns: 12,
+      gutters: .25,
+      column-width: false,
+      global-box-sizing: content-box,
+      last-flow: to
+    );
+
+
+    @include container($wow-layout);
+
+    .right {
+        @include span(3 of 12)
+        background-color: #ccc;
+        margin-right: 0;
+    }
+    .left {
+        @include span(9 of 12);
+
+    }
+}

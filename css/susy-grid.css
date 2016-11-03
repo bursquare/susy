@@ -1,0 +1,108 @@
+body {
+  color: #474747;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin-bottom: 32px;
+}
+
+.col {
+  text-align: center;
+  background-color: #ededed;
+  line-height: 3;
+}
+
+.container-1 {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #F00;
+}
+
+.container-1:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.container-1 .col {
+  width: 25%;
+  float: left;
+  margin-right: 5.26316%;
+}
+
+.container-2 {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-2:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.container-2 .col {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.container-2 .col:last-child {
+  margin-right: 0;
+}
+
+.layout-33-66 {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-33-66:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.layout-33-66 .left {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  background-color: #ccc;
+}
+
+.layout-33-66 .right {
+  width: 74.57627%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-right: 0;
+}
+
+.layout-66-33 {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-66-33:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.layout-66-33 .right {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  background-color: #ccc;
+  margin-right: 0;
+}
+
+.layout-66-33 .left {
+  width: 74.57627%;
+  float: left;
+  margin-right: 1.69492%;
+}
